@@ -17,7 +17,8 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 
-mongoose.connect("mongodb://localhost/tedd_v6" ,{ useNewUrlParser: true });
+mongoose.connect("mongodb+srv://salvaabhi31:Nickklause31%23@cluster0-fd63v.mongodb.net/tedd_v6?retryWrites=true&w=majority",{ useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/tedd_v6" ,{ useNewUrlParser: true });
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(methodOverride("_method"));
 app.set("view engine" , "ejs");
