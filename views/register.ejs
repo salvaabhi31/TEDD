@@ -1,0 +1,49 @@
+<%- include("./partials/header") %>
+<link rel="stylesheet" href="/stylesheets/login.css">
+<link rel="stylesheet" href="/stylesheets/login.css">
+<script rel="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
+<div class="container form">
+ <h1 class="display-2 text-primary">Hello! <i class="fas fa-address-card"></i></h1>
+<form action="/register" method="POST">
+ <div class="form-group">
+   <input type="text" class="form-control-plaintext" name="username" placeholder="username" required>
+ </div>
+ <div class="form-group">
+  <input type="password" name="password" class="form-control-plaintext" placeholder="password" required>
+  </div>
+<!-- <div class="form-group ">-->
+<!-- <div class="form-check form-check-inline">-->
+<!--  <input class="form-check-input tick1" type="checkbox" class="form-control-plaintext custom-control-input"name="des" id="inlineCheckbox1" value="Faculty">-->
+<!--  <label class="form-check-label" for="inlineCheckbox1">Faculty</label>-->
+<!-- </div>-->
+
+<!--<div class="form-check form-check-inline tick2">-->
+<!--  <input class="form-check-input" type="checkbox" class="form-control-plaintext custom-control-input" name="des" id="inlineCheckbox2" value="Student">-->
+<!--  <label class="form-check-label" for="inlineCheckbox2">Student</label>-->
+<!--</div>-->
+<!--</div>-->
+
+<div class="form-group">
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="des" class="custom-control-input" value="Faculty" required>
+  <label class="custom-control-label" for="customRadio1">Faculty</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="des" class="custom-control-input" value="Student" required>
+  <label class="custom-control-label" for="customRadio2">Student</label>
+</div>
+</div>
+  
+ 
+ <button class="btn btn-success btn-sm">SignUp</button>
+ </form>
+</div>
+
+
+
+
+
+
+
+<%- include("partials/footer") %>

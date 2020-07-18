@@ -1,0 +1,2676 @@
+<%- include("./partials/header") %>
+<link rel="stylesheet" href="/stylesheets/create.css">
+
+<form action="/students/<%=student._id%>?_method=PUT" method="POST">
+<div class="conatiner Box name header ">
+   <div class="card" style="width: 18rem;">
+     <img src="https://image.shutterstock.com/image-photo/student-preparing-exam-learning-lessons-260nw-431109490.jpg" class="card-img-top" alt="...">
+      <h2 class="card-header">Edit Details!</h1>
+      <div class="card-body">
+       <div class="form-group justify-content-center">
+        <input class="form-control" type="text" name="student[name]"  placeholder="student name" value="<%=student.name%>">
+       </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="student[usn]"  placeholder="University Seat Number" value="<%=student.usn%>">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="number" name="student[semester]"  placeholder="Current Sem" value="<%=student.semester%>">
+      </div>
+     </div>
+     </div>
+     </div>
+  <div class="container">
+  <div class="row">
+    <div class="col m-3">
+     <div class="card" style="width: 25em;">
+      <div class="card-header">
+       <h2>1st Semester</h2> 
+       </div>
+       <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub1.sub11]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub1.credits11]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub1.grade11]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub2.sub12]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub2.credits12]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub2.grade12]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub3.sub13]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub3.credits13]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub3.grade13]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub4.sub14]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub4.credits14]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub4.grade14]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub5.sub15]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub5.credits15]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub5.grade15]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub6.sub16]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub6.credits16]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub6.grade16]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub7.sub17]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub7.credits17]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub7.grade17]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="1" class="sem">1st SEM</option>
+   </select>
+   <select name="student[sem1.sub8.sub18]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem1.sub8.credits18]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem1.sub8.grade18]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   </ul>
+   </div>
+    </div>
+    <div class="col m-3">
+     <div class="card" style="width: 25em;">
+      <div class="card-header">
+       <h2>2nd Semester</h2>
+      </div>
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="2" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub1.sub21]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub1.credits21]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub1.grade21]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="2" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub2.sub22]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub2.credits22]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub2.grade22]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="2" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub3.sub23]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub3.credits23]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub3.grade23]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub4.sub24]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub4.credits24]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub4.grade24]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="2" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub5.sub25]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub5.credits25]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub5.grade25]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="2" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub6.sub26]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub6.credits26]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub6.grade26]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="2" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub7.sub27]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub7.credits27]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub7.grade27]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="2" class="sem">2nd SEM</option>
+   </select>
+   <select name="student[sem2.sub8.sub28]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem2.sub8.credits28]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem2.sub8.grade28]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   </ul>
+    </div>
+  </div>
+  </div>
+   <div class="row">
+    <div class="col m-3">
+      <div class="card" style="width: 25em;">
+      <div class="card-header">
+      <h2>3rd Semester</h2> 
+      </div>
+      <ul class="list-group list-group-flush">
+       <li  class="list-group-item">
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub1.sub31]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub1.credits31]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub1.grade31]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub2.sub32]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub2.credits32]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub2.grade32]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub3.sub33]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub3.credits33]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub3.grade33]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub4.sub34]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub4.credits34]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub4.grade34]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub5.sub35]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub5.credits35]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub5.grade35]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub6.sub36]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub6.credits36]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub6.grade36]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub7.sub37]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub7.credits37]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub7.grade37]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="3" class="sem">3rd SEM</option>
+   </select>
+   <select name="student[sem3.sub8.sub38]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem3.sub8.credits38]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem3.sub8.grade38]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   </ul>
+    </div>
+    </div>
+    <div class="col m-3">
+      <div class="card" style="width: 25em;">
+      <div class="card-header">
+      <h2>4th Semester</h2> 
+      </div>
+      <ul class="list-group list-group-flush">
+       <li class="list-group-item">
+      <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub1.sub41]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub1.credits41]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub1.grade41]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub2.sub42]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub2.credits42]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub2.grade42]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub3.sub43]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub3.credits43]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub3.grade43]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub4.sub44]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub4.credits44]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub4.grade44]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub5.sub45]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub5.credits45]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub5.grade45]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub6.sub46]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub6.credits46]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub6.grade46]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub7.sub47]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub7.credits47]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub7.grade47]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="4" class="sem">4th SEM</option>
+   </select>
+   <select name="student[sem4.sub8.sub48]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem4.sub8.credits48]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem4.sub8.grade48]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   </ul>
+  </div>
+  </div>
+  </div>
+   <div class="row">
+    <div class="col m-3">
+     <div class="card" style="width: 25em;">
+      <div class="card-header">
+       <h2>5th Semester</h2>
+      </div>
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub1.sub51]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub1.credits51]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub1.grade51]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub2.sub52]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub2.credits52]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub2.grade52]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+       <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub3.sub53]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub3.credits53]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub3.grade53]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+       <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub4.sub54]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub4.credits54]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub4.grade54]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+       <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub5.sub55]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub5.credits55]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub5.grade55]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+       <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub6.sub56]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub6.credits56]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub6.grade56]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+       <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub7.sub57]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub7.credits57]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub7.grade57]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+     <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="5" class="sem">5th SEM</option>
+   </select>
+   <select name="student[sem5.sub8.sub58]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem5.sub8.credits58]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem5.sub8.grade58]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    </div>
+    </div>
+  
+    <div class="col m-3">
+      <div class="card" style="width: 25em;">
+      <div class="card-header">
+       <h2>6th Semester</h2> 
+     </div>
+     <ul  class="list-group list-group-flush">
+      <li class="list-group-item">
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub1.sub61]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub1.credits61]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub1.grade61]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub2.sub62]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub2.credits62]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub2.grade62]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub3.sub63]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub3.credits63]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub3.grade63]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub8.sub64]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub8.credits64]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub8.grade64]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub5.sub65]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub5.credits65]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub5.grade65]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub6.sub66]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub6.credits66]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub6.grade66]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub7.sub67]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub7.credits67]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub7.grade67]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+    <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="6" class="sem">6th SEM</option>
+   </select>
+   <select name="student[sem6.sub8.sub68]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem6.sub8.credits68]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem6.sub8.grade68]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   </ul>
+    </div>
+  </div>
+  </div>
+   <div class="row">
+    <div class="col m-3">
+     <div class="card" style="width: 25em;">
+      <div class="card-header">
+    <h2>7th Semester</h2> 
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub1.sub71]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub1.credits71]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub1.grade71]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub2.sub72]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub2.credits72]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub2.grade72]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub3.sub73]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub3.credits73]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub3.grade73]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub4.sub74]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub4.credits74]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub4.grade74]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub5.sub75]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub5.credits75]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub5.grade75]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub6.sub76]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub6.credits76]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub6.grade76]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub7.sub77]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub7.credits77]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub7.grade77]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="7" class="sem">7th SEM</option>
+   </select>
+   <select name="student[sem7.sub8.sub78]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem7.sub8.credits78]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem7.sub8.grade78]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   </ul>
+    </div>
+    </div>
+    <div class="col m-3">
+      <div class="card" style="width: 25em;">
+      <div class="card-header">
+       <h2>8th Semester</h2> 
+     </div>
+     <ul class="list-group list-group-flush">
+      <li  class="list-group-item">
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub1.sub81]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub1.credits81]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub1.grade81]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+  
+   <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub2.sub82]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub2.credits82]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub2.grade82]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub3.sub83]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub3.credits83]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub3.grade83]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub4.sub84]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub4.credits84]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub4.grade84]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub5.sub85]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub5.credits85]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub5.grade85]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub6.sub86]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub6.credits86]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub6.grade86]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub7.sub87]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub7.credits87]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub7.grade87]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   <li  class="list-group-item">
+    <div class="form-group">
+   <select name="semester" class="sem first" required>
+   <option value="8" class="sem">8th SEM</option>
+   </select>
+   <select name="student[sem8.sub8.sub88]" class="sub" required>
+   <option disabled selected>Subject</option>
+   <option  value="Physics" class="option">Phy</option>
+   <option  value="Caed">Caed</option>
+   <option  value="Kannada">Kan</option>
+   <option  value="Maths-2">M-2</option>
+   <option  value="FEL">FEL</option>
+   <option  value="Lab-1">L1</option>
+   <option  value="Lab-2">L2</option>
+   <option  value="Lab-3">L3</option>
+   </select>
+   <select name="student[sem8.sub8.credits88]" class="credit" required>
+   <option disabled selected>Credits</option>
+   <option  value="1.0">1.0</option>
+   <option  value="1.5">1.5</option>
+   <option  value="2.0">2.0</option>
+   <option  value="2.5">2.5</option>
+   <option  value="3.0">3.0</option>
+   <option  value="3.5">3.5</option>
+   <option  value="4.0">4.0</option>
+   <option  value="4.5">4.5</option>
+   </select>
+   <select name="student[sem8.sub8.grade88]" class="grade" required>
+   <option disabled selected>Grade</option>
+   <option  value="10.0">S</option>
+   <option  value="9.0">A</option>
+   <option  value="8.0">B</option>
+   <option  value="7.0">C</option>
+   <option  value="6.0">D</option>
+   <option  value="5.0">E</option>
+   <option  value="0.0">F</option>
+   <option  value="0.0">X</option>
+   </select>
+   </div>
+   </li>
+   </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+   <button class="btn btn-lg btn-warning m-5">Submit</button>
+ </form>
+
+
+<%- include("partials/footer") %>

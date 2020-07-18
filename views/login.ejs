@@ -1,0 +1,19 @@
+<%- include("./partials/header") %>
+
+<link rel="stylesheet" href="/stylesheets/login.css">
+<script rel="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
+<div class="container form"> 
+<h1 class=" display-2 text-primary">Login <i class="far fa-address-book"></i></h1>
+<form action="/login" method="POST" >
+    <div class="form-group">
+    <input type="text" name="username" class="form-control-plaintext" placeholder="username">
+    </div>
+    <div class="form-group">
+    <input type="password" name="password" class="form-control-plaintext" placeholder="password">
+    </div>
+    <button class="btn btn-sm btn-success">Submit</button>
+</form>
+</div>
+
+<%- include("./partials/footer") %>

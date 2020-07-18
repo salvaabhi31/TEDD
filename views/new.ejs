@@ -1,0 +1,28 @@
+<%- include("./partials/header") %>
+
+       <div class="container">
+           <div class="row" style="display: block;">
+              <h1 style="text-align: center;  margin: 10px auto;">Create your own database!</h1>
+              <div style="width: 30%; margin: 30px auto;">
+                     <form action="/students" method="POST">
+                         <div class="form-group justify-content-center">
+                             <input class="form-control" type="text" name="name"  placeholder="student name">
+                         </div>
+                         <div class="form-group">
+                             <input class="form-control" type="text" name="usn"  placeholder="University Seat Number">
+                         </div>
+                        
+                        
+                         <div class="form-group">
+                              <button class= "btn btn-lg btn-default btn-primary">Submit</button>
+                         </div> 
+                          <a href="/filldatabase">Back</a>
+                     </form>
+                </div>
+              
+              
+           </div>
+      </div>
+      
+
+ <%- include("partials/footer") %>

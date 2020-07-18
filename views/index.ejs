@@ -1,0 +1,38 @@
+<%- include("./partials/header") %>
+<link rel="stylesheet" href="/stylesheets/index.css">
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">TELECOMMUNICATION DEPARTMENT DATABASE</h1>
+    <p class="lead">Details of every student just a click away.</p>
+  </div>
+</div>
+
+
+ 
+
+<div class="container">
+<div class="row" style="display-flex flex:wrap;">  
+  <% students.forEach(function(students){ %>
+  <div class="col-3 m-3">
+ <div class="card m-2" style="width: 18rem;">
+   <div class="card-body">
+     <h5 class="card-title"><%=students.name%></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%=students.usn%></h6>
+       <h6 class="card-subtitle mb-2 text-muted"><%=students.semester%> SEM</h6>
+        <p class="card-text"><em>created by:-</em><%=students.author.username%>(<%=students.author.des%>)</p>
+        <a href="/students/<%= students._id %>" class="btn btn-outline-success btn-sm card-link">Show more</a>
+        <a class="btn btn-outline-warning btn-sm card-link" href="/students/<%=students._id%>/edit">Edit</a>
+        <form id ="delete" action="/students/<%=students._id%>?_method=DELETE" method="POST">
+        <button class="btn btn-outline-danger btn-sm m-1">DELETE</button>
+        </form>
+   </div>
+  </div>
+  </div>
+  <% }); %>
+  </div>
+  </div>
+
+ 
+
+  <%- include("./partials/footer") %>

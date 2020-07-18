@@ -1,0 +1,37 @@
+.name{
+    margin: auto auto;
+}
+
+.basic{
+    margin-left: 15rem;
+    margin-top: 10rem;
+    margin-bottom:5rem;
+}
+.Sem{
+    border: 2px solid skyblue ;
+    height: 20rem;
+    box-shadow: 5px 10px skyblue;
+   
+}
+.fill{
+    border: 2px solid white;
+    height: 17rem;
+}
+.Box{
+    width: 25rem;
+}
+.clickedto-do{
+    border: 10px solid black;
+    
+;}
+.footer{
+    margin-top: 7%;
+}
+.header
+{
+    margin-top:5%;
+}
+.center{
+    text-align:center;
+
+}

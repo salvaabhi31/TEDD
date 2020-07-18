@@ -1,0 +1,36 @@
+ <%- include("./partials/header") %>
+
+       <div class="container">
+           <div class="row" style="display: block;">
+              <h1 style="text-align: center;  margin: 10px auto;">Edit <%=student.name%></h1>
+              <div style="width: 30%; margin: 30px auto;">
+                     <form action="/students/<%=student._id%>?_method=PUT" method="POST">
+                         <div class="form-group justify-content-center">
+                             <input class="form-control" type="text" name= "student[name]" value="<%=student.name%>">
+                         </div>
+                         <div class="form-group">
+                             <input class="form-control" type="text" name="student[usn]" value="<%=student.usn%>">
+                         </div>
+                         <div class="form-group">
+                             <input class="form-control" type="number" min=1 max=10 step=1 name="student[semester]" placeholder="Sem">
+                         </div>
+                         <div class="form-group">
+                             <input class="form-control" type="text" name="student[sub]" placeholder="Subject" >
+                         </div>
+                         <div class="form-group">
+                             <input class="form-control" type="number" min=0 max=15 step=.5 name="student[credit]" placeholder="Credit"> 
+                         </div>
+                         <div class="form-group">
+                             <input class="form-control" type="text" name="student[grade]" placeholder="Grade">
+                         </div>
+                         
+                         <div class="form-group">
+                              <button class= "btn btn-lg btn-default btn-primary">Submit</button>
+                         </div> 
+                          <a href="/campgrounds">Back</a>
+                     </form>
+                </div>
+              
+              
+           </div>
+      </div>
