@@ -893,7 +893,7 @@ function checkStudentOwnership(req,res,next)
          else
          {   
              req.flash("error","You Need to be Logged-In to do that.");
-             res.redirect("back");
+             res.redirect("/login");
          }
    };
 
