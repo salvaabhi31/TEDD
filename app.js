@@ -809,8 +809,12 @@ app.get("/register",function(req,res){
 //handle signup logic
 
 app.post("/register",function(req,res){
-    
-     User.register(new User({username: req.body.username,des: req.body.des}),req.body.password,function(err,user){
+     var newUser= new User({username: req.body.username,des: req.body.des});
+     
+     if(req.body.adminCode === 'secretcode123') {
+      newUser.isAdmin = true;
+    }
+     User.register(newUser,req.body.password,function(err,user){
         if(err)
         {
             console.log(err);
@@ -876,7 +880,7 @@ function checkStudentOwnership(req,res,next)
                    
                    
                    //check if he ownns the campground
-                    if(foundStudent.author.id.equals(req.user._id))
+                    if(foundStudent.author.id.equals(req.user._id) || req.user.isAdmin)
                     {
                       next();
                     }

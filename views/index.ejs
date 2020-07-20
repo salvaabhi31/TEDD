@@ -21,10 +21,12 @@
       <h6 class="card-subtitle mb-2 text-muted"><%=students.usn%></h6>
        <h6 class="card-subtitle mb-2 text-muted"><%=students.semester%> SEM</h6>
         <p class="card-text"><em>created by:-</em><%=students.author.username%>(<%=students.author.des%>)</p>
+        <% if(currentUser && students.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
         <a href="/students/<%= students._id %>" class="btn btn-outline-success btn-sm card-link">Show more</a>
         <a class="btn btn-outline-warning btn-sm card-link" href="/students/<%=students._id%>/edit">Edit</a>
         <form id ="delete" action="/students/<%=students._id%>?_method=DELETE" method="POST">
         <button class="btn btn-outline-danger btn-sm m-1">DELETE</button>
+        <% } %>
         </form>
    </div>
   </div>
