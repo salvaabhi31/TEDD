@@ -56,30 +56,75 @@ app.get("/",function(req,res){
   res.render("landing"); 
 });
 
+app.get("/about",function(req,res){
+  res.render("about"); 
+});
+app.get("/contact",function(req,res){
+  res.render("contact"); 
+});
+app.get("/gallery",function(req,res){
+  res.render("gallery"); 
+});
+app.get("/kcn",function(req,res){
+  res.render("KCN"); 
+});
+app.get("/kv",function(req,res){
+  res.render("KV"); 
+});
+
+
 
 // INDEX show campgrounds!
 app.get("/students",function(req,res){
     
     //get all campgrounds from db
-     Student.find({},function(err,allstudents){
+    //  Student.find({},function(err,allstudents){
      
-     if(err)
-     {
-             console.log("oh no error");
-             console.log(err);
-     }
-     else
-     {
-             res.render("index",{ students:allstudents});
-     }
+    //  if(err)
+    //  {
+    //          console.log("oh no error");
+    //          console.log(err);
+    //  }
+    //  else
+    //  {
+    //          res.render("index",{ students:allstudents});
+    //  }
      
+      Student.find({},function(err,allStudents){
      
+     var noMatch = null;
+    if(req.query.search) {
+        const regex = new RegExp(escapeRegex(req.query.search), 'gi');
+        // Get all campgrounds from DB
+        Student.find({usn: regex}, function(err, allStudents){
+           if(err){
+               console.log(err);
+           } else {
+              if(allStudents.length < 1) {
+                  noMatch = "No campgrounds match that query, please try again.";
+              }
+              res.render("index",{students:allStudents, noMatch: noMatch});
+           }
+        });
+    } else {
+        // Get all campgrounds from DB
+        Student.find({}, function(err, allStudents){
+           if(err){
+               console.log(err);
+           } else {
+              res.render("index",{students:allStudents, noMatch: noMatch});
+           }
+        });
+    }
      
  });
     
     
     
 });
+function escapeRegex(text) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+};
 
 //create student
 app.post("/students",isLoggedIn,function(req,res){

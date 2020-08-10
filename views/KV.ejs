@@ -1,0 +1,272 @@
+<%- include("./partials/header") %>
+<link rel="stylesheet" href="/stylesheets/KCN.css">
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Dr. K Viswanath</h1>
+    <p class="lead">Professor.</p>
+  </div>
+</div>
+
+<!--GRID 1  -->
+<div class="container">
+  <div class="row ">
+    <div class="col-sm-4 pl-1 ">
+      <h1><strong>SUBJECTS</strong></h1>
+      <!--subject table  -->
+      <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">NAME</th>
+      <th scope="col">SEMESTER</th>
+      <th scope="col">CREDITS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>SATCOM</td>
+      <td>THIRD</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>IMAGE PROCESSING</td>
+      <td>FIFTH</td>
+      <td>4.5</td>
+    </tr>
+   
+  </tbody>
+</table>
+    </div>
+    <div class="col-sm-8 pl-1">
+      <h1><strong>LECTURES</strong></h1>
+      <!--carousel-->
+     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/1-tdrs_image_0.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/04/931/524/Satelitte-Stock.jpg?ve=1&tl=1" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  </div>
+  </div>
+
+
+</div>
+</div>
+
+<!--grid 2  -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 pl-1 pt-3">
+      <h4 class="query-heading"><strong>SUBJECT RELATED QUERIES!</strong></h4>
+   <div id="carouselExampleControls" class="carousel slide add" data-ride="carousel">
+    <div class="carousel-inner">
+     <div class="carousel-item active query-dosplay">
+    <ul class="question1">
+       <li><strong><span class="matter1">Where will I get the compensatory Form?</span></strong></li>
+       <li><strong><span class="matter1">Where do I have to submit my medical?</span></strong></li>
+       <li><strong><span class="matter1">Where can i fill my online fee?</span></strong></li>
+      </ul>
+     </div>
+    <div class="carousel-item">
+      <ul>
+       <li><strong>CAMPUS ZEROX</strong></li>
+       <li><strong>TO THE PROCTOR</strong></li>
+       <li><strong>SEE COLLEGE WEBSITE</strong></li>
+      </ul>
+    </div>
+    
+ </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ </div>
+ </div>
+        <div class="col-sm-4 pl-1 pt-3">
+      <h4 class="query-heading"><strong>BRANCH RELATED QUERIES!</strong></h4>
+   <div id="carouselExampleControls" class="carousel slide add" data-ride="carousel">
+    <div class="carousel-inner">
+     <div class="carousel-item active query-dosplay">
+     <ul class="question2">
+       <li><strong><span class="matter2">Where will I get the compensatory Form?</span></strong></li>
+       <li><strong><span class="matter2">Where do I have to submit my medical?</span></strong></li>
+       <li><strong><span class="matter2">Where can i fill my online fee?</span></strong></li>
+      </ul>
+     </div>
+    <div class="carousel-item">
+      <ul>
+       <li><strong>CAMPUS ZEROX</strong></li>
+       <li><strong>TO THE PROCTOR</strong></li>
+       <li><strong>SEE COLLEGE WEBSITE</strong></li>
+      </ul>
+    </div>
+    
+ </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ </div>
+ </div>
+     <div class="col-sm-4 pl-1 pt-3">
+      <h4 class="query-heading"><strong>SUGGESTIONS!</strong></h4>
+   <div id="carouselExampleControls" class="carousel slide add" data-ride="carousel">
+    <div class="carousel-inner">
+     <div class="carousel-item active query-dosplay">
+      <ul class="question3">
+       <li><strong><span class="matter3">Where will I get the compensatory Form?</span></strong></li>
+       <li><strong><span class="matter3">Where do I have to submit my medical?</span></strong></li>
+       <li><strong><span class="matter3">Where can i fill my online fee?</span></strong></li>
+      </ul>
+     </div>
+    <div class="carousel-item">
+      <ul>
+       <li><strong>CAMPUS ZEROX</strong></li>
+       <li><strong>TO THE PROCTOR</strong></li>
+       <li><strong>SEE COLLEGE WEBSITE</strong></li>
+      </ul>
+    </div>
+    
+ </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ </div>
+ </div>
+  </div>
+</div>
+
+
+\
+
+
+     <!--grid 3-->
+
+  <div class="container mt-2">
+   <div class="row ask">
+     <div class="col-4">
+       <h1>ASK ?</h1>
+       <form>
+        <div class="form-group pr-2">
+         <label for="exampleFormControlTextarea1"> <strong>Query Box</strong></label>
+         <textarea class="form-control subjectrelateddoubts" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+       </form>
+     </div>
+     <div class="col-4">
+        <h1>ASK ?</h1>
+        <form>
+        <div class="form-group pr-2">
+         <label for="exampleFormControlTextarea1"><strong>Query Box</strong></label>
+         <textarea class="form-control branchrelateddoubts" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+       </form>
+     </div>
+     <div class="col-4">
+        <h1>ASK ?</h1>
+        <form>
+        <div class="form-group pr-2">
+         <label for="exampleFormControlTextarea1"><strong>Query Box</strong></label>
+         <textarea class="form-control suggestions" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+       </form>
+     </div>
+  </div>
+ </div>
+
+ <div class="container mt-2">
+   <div class="row ask">
+     <div class="col-12">
+       <form>
+         <div class="form-group pr-2">
+          <label for="exampleFormControlTextarea1"><strong>DIRECT CHAT!</strong></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+         </div>
+        </form>
+        <button type="button" class="btn btn-info justify-content-end">Submit</button>
+    </div>
+   </div>
+ </div>
+ <script>
+    $(".add").on("click", function(){
+  
+  $(this).toggleClass("add");
+
+});
+
+  
+  	$(".subjectrelateddoubts").keypress(function(event){
+	if(event.which === 13)
+	{   //grabbing new to-do text
+		var todoText= $(this).val();
+		
+
+         $(this).val("");
+		//adding a new li
+		$(".question1").append("<li><strong><span class='matter1'></span></strong> " + todoText.bold() + "</li>");
+	}
+	
+});
+
+  	
+  		$(".branchrelateddoubts").keypress(function(event){
+	if(event.which === 13)
+	{   //grabbing new to-do text
+		var todoText= $(this).val();
+		
+
+         $(this).val("");
+		//adding a new li
+		$(".question2").append("<li><strong><span class='matter2'></span></strong> " + todoText.bold() + "</li>");
+	}
+	
+});
+	$(".suggestions").keypress(function(event){
+	if(event.which === 13)
+	{   //grabbing new to-do text
+		var todoText= $(this).val();
+		
+
+         $(this).val("");
+		//adding a new li
+		$(".question3").append("<li><strong><span class='matter3'></span></strong> " + todoText.bold() + "</li>");
+	}
+	
+});
+
+	
+
+</script>
+
+<%- include("./partials/footer") %>
